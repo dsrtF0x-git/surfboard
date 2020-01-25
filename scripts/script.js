@@ -6,38 +6,14 @@ $(document).ready(function() {
     $(this).addClass("active-thumbs");
   });
 
-  $(".surfboards__tabs1 li").click(function() {
+  $(".surfboards__tabs li").click(function() {
     $(this)
       .siblings("li")
       .removeClass("active-tabs");
     $(this).addClass("active-tabs");
   });
 
-  $(".surfboards__tabs2 li").click(function() {
-    $(this)
-      .siblings("li")
-      .removeClass("active-tabs");
-    $(this).addClass("active-tabs");
-  });
-
-  $(".surfboards__tabs3 li").click(function() {
-    $(this)
-      .siblings("li")
-      .removeClass("active-tabs");
-    $(this).addClass("active-tabs");
-  });
-
-  $("#tab-container1").easytabs({
-    animate: true,
-    animationSpeed: "fast"
-  });
-
-  $("#tab-container2").easytabs({
-    animate: true,
-    animationSpeed: "fast"
-  });
-
-  $("#tab-container3").easytabs({
+  $(".tab-container").easytabs({
     animate: true,
     animationSpeed: "fast"
   });

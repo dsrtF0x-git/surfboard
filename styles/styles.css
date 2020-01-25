@@ -126,13 +126,13 @@ body {
   font-size: 14px;
 }
 
-.surfboards__tabs1, .surfboards__tabs2, .surfboards__tabs3 {
+.surfboards__tabs {
   border-bottom: 1px solid #d9d9d9;
   margin-top: 20px;
   width: 80%;
 }
 
-.surfboards__tabs1 a, .surfboards__tabs2 a, .surfboards__tabs3 a {
+.surfboards__tabs a {
   font-size: 14px;
   color: #a0a0a0;
   font-family: 'Raleway', sans-serif;
@@ -143,7 +143,7 @@ body {
   transition: all .3s;
 }
 
-.surfboards__tabs1 a:hover, .surfboards__tabs2 a:hover, .surfboards__tabs3 a:hover {
+.surfboards__tabs a:hover {
   color: #000;
 }
 
