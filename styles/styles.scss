@@ -1,0 +1,208 @@
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+.surfboards {
+  width: 1050px;
+
+  &__picture {
+    background: linear-gradient(
+      134deg,
+      #00d2ff 0%,
+      #00d2ff 50%,
+      #fff 50%,
+      #fff 100%
+    );
+    padding: 70px 55px;
+  }
+
+  &__thumbs {
+    width: 70px;
+    height: 70px;
+    margin: 3px 0;
+    border: 1px solid #ccc;
+    box-sizing: content-box;
+
+    & > img {
+      object-fit: cover;
+      width: 70px;
+      height: 70px;
+    }
+  }
+
+  &__heading {
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  &__rating_yStar {
+    background-image: url("../images/staryellow.png");
+    display: block;
+    width: 15px;
+    height: 15px;
+    margin-right: 3px;
+  }
+
+  &__rating_gStar {
+    background-image: url("../images/stargrey.png");
+    display: block;
+    width: 15px;
+    height: 15px;
+    transition: all .2s;
+
+    & ~ span {
+      font-size: 12px;
+      font-weight: bold;
+      color: #787878;
+      margin-left: 3px;
+    }
+
+    &:hover {
+      background-image: url("../images/staryellow.png");
+    }
+  }
+
+  &__description {
+    padding: 45px 0 0 0;
+    position: relative;
+
+    &::after {
+      content: "BOARDS";
+      position: absolute;
+      right: -45px;
+      top: 0;
+      color: #fafafa;
+      font-size: 127px;
+      height: 100%;;
+      transform: rotate(180deg);
+      writing-mode: tb-rl;
+      z-index: -1;
+      letter-spacing: 5px;
+    }
+
+    &_article {
+      font-size: 16px;
+      font-family: 'Raleway', sans-serif;
+      width: 80%;
+    }
+  }
+
+  &__controller {
+    margin-right: -35px;
+  }
+
+  &__controller > button {
+    background-color: #f2d800;
+    border: none;
+    outline: none;
+    width: 35px;
+    height: 35px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    transition: all .3s;
+
+    &:hover {
+      background-color: #d9c82b;
+    }
+  }
+
+  &__controller_left {
+    background-image: url("../images/left_arrow.png");
+  }
+
+  &__controller_right {
+    background-image: url("../images/right_arrow.png");
+  }
+
+  &__counter {
+    background-color: #000;
+    padding: 6px;
+
+    & > span {
+      color: #f4f4f4;
+      font-size: 14px;
+    }
+  }
+
+  &__tabs1,
+  &__tabs2,
+  &__tabs3 {
+    border-bottom: 1px solid #d9d9d9;
+    margin-top: 20px;
+    width: 80%;
+
+    & a {
+      font-size: 14px;
+      color: #a0a0a0;
+      font-family: 'Raleway', sans-serif;
+      font-weight: bold;
+      border-bottom: 3px solid transparent;
+      text-decoration: none;
+      transition: all .3s;
+
+      &:hover {
+        color: #000;
+      }
+    }
+  }
+
+  &__price {
+    font-weight: bold;
+    font-size: 24px;
+  }
+
+  &__buy {
+    background-color: #00b0ff;
+    outline: none;
+    border: none;
+    font-size: 14px;
+    color: #fff;
+    padding: 12px 25px;
+    font-weight: bold;
+    transition: .5s;
+
+    &:hover {
+      box-shadow: 0 12px 12px #00b0ff;
+    }
+  }
+
+  &__all {
+    color: #00b0ff;
+    font-size: 16px;
+    border-bottom: 2px solid #00b0ff;
+    margin-top: 60px;
+    font-weight: bold;
+
+    &:hover {
+      text-decoration: none;
+      color: #2eace6;
+      border-bottom: 2px solid #2eace6;
+    }
+  }
+}
+
+.active-thumbs {
+  border: 1px solid #00b0ff;
+}
+
+.active-tabs {
+  border-bottom: 3px solid #00b0ff !important;
+
+  & > a {
+    color: #000;
+  }
+}
+
+.owl-item.active {
+  padding-right: 50px;
+}
+
+@media screen and (max-width: 992px) {
+  .surfboards {
+    &__description {
+      &::after {
+        font-size: 90px;
+      }
+    }
+  }
+}
